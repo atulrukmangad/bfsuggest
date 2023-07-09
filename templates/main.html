@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BF Suggestor</title>
+    <style>
+        .answer {
+            font-size: 200px;
+            font-weight: 900;
+            vertical-align: middle;
+            text-align: center;
+        }
+        @media screen and (min-width: 500px) {
+        a {
+            display: none
+        }
+    }
+    </style>
+</head>
+<body>
+    <span class='answer'>{{ answer }}</span>
+    <a href= 
+"whatsapp://send?text=Today's breakfast is {{ answer }}"
+        data-action="share/whatsapp/share"
+        target="_blank"> 
+        Share to whatsapp 
+    </a> 
+<br>
+    <a href="{{ recipe_vid }}" target="_blank">View recipe</a>
+
+</body>
+</html>
